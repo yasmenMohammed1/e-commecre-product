@@ -1,0 +1,28 @@
+// _media-queries.scss
+$mobile-breakpoint: 576px;
+$tablet-breakpoint: 768px;
+$desktop-breakpoint: 992px;
+
+@mixin media-query($breakpoint) {
+  @media screen and (min-width: $breakpoint) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @include media-query($mobile-breakpoint) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @include media-query($tablet-breakpoint) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @include media-query($desktop-breakpoint) {
+    @content;
+  }
+}

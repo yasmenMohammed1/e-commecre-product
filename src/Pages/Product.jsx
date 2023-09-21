@@ -100,7 +100,7 @@ export class Product extends Component {
           <div className="product-details">
             <div className="product-title">
               <div>
-                <p> </p>
+                <p>Name Of Product</p>
                 <div>
                   {[1, 2, 3, 4, 5].map((num) => (
                     <AiTwotoneStar

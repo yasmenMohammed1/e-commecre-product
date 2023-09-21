@@ -1,3 +1,5 @@
+@import "_variables";
+
 .open-cart {
   position: absolute;
   width: 100%;
@@ -30,7 +32,7 @@
   }
   .price {
     margin-top: 0.8rem;
-    color: #b93c3c;
+    color: $secondary_color;
     font-weight: 600;
     font-size: medium;
   }

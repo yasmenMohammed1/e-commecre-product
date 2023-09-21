@@ -1,3 +1,4 @@
+@import "_variables";
 .product-card {
   grid-template-columns: repeat(6, 1fr);
   display: grid;
@@ -14,7 +15,7 @@
   .row {
     gap: 1rem;
     p {
-      color: #b93c3c;
+      color: $secondary_color;
       font-weight: 500;
     }
     .text-underlined {
@@ -34,6 +35,8 @@
   .product-details {
     grid-column-start: 5;
     grid-column-end: 12;
+    width: 100%;
+    margin-right: auto;
   }
   .product-description {
     color: rgba(7, 7, 7, 0.6);
@@ -42,7 +45,7 @@
 
   .choices-section {
     margin-top: 1rem;
-    color: #b93c3c;
+    color: $secondary_color;
   }
 
   .size-btn {
@@ -59,7 +62,7 @@
     padding: 0.8rem;
   }
   .selected {
-    border: #b93c3c solid 1px;
+    border: $secondary_color solid 1px;
   }
   .main-image-container {
     height: 100%;

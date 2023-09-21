@@ -2,11 +2,7 @@ import React, { Component } from "react";
 
 class Home extends Component {
   render() {
-    return (
-      <div color="green">
-        Homddddddddddddddddddddddddddddddddddddddddddddddcasaeieweie
-      </div>
-    );
+    return <div color="green">home </div>;
   }
 }
 

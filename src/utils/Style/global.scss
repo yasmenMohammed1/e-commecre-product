@@ -1,10 +1,10 @@
-$base-color: #f5f5f5;
+@import "_variables";
 body {
   background-color: $base-color;
 }
 .navbar {
   display: flex;
-  background-color: red;
+  background-color: $base-color;
   width: 100%;
   height: 10vh;
   padding-left: 24px;
@@ -29,5 +29,4 @@ body {
 .icons-bar {
   text-align: end;
   margin-left: auto;
-  background-color: #fff;
 }

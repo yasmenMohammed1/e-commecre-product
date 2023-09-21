@@ -21,7 +21,7 @@ export class ProductsMayLikeYou extends Component {
         <div className="trending">
           <div className="container">
             <div className="title-btns">
-              <h3>you may also like</h3>
+              <h2>you may also like</h2>
               <div className="btns">
                 <button title="scroll left" onClick={this.slideLeft}>
                   <AiOutlineArrowLeft />

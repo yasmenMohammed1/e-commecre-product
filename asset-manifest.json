@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/e-commecre-product/static/css/main.5fe3c32b.css",
-    "main.js": "/e-commecre-product/static/js/main.00d363ce.js",
+    "main.js": "/e-commecre-product/static/js/main.30d543c7.js",
     "static/css/938.22768fff.chunk.css": "/e-commecre-product/static/css/938.22768fff.chunk.css",
     "static/js/938.58d8b308.chunk.js": "/e-commecre-product/static/js/938.58d8b308.chunk.js",
     "static/js/787.ad5f89c9.chunk.js": "/e-commecre-product/static/js/787.ad5f89c9.chunk.js",
@@ -18,7 +18,7 @@
     "static/media/main-product-2.png": "/e-commecre-product/static/media/main-product-2.c936976aef0811692eb8.png",
     "index.html": "/e-commecre-product/index.html",
     "main.5fe3c32b.css.map": "/e-commecre-product/static/css/main.5fe3c32b.css.map",
-    "main.00d363ce.js.map": "/e-commecre-product/static/js/main.00d363ce.js.map",
+    "main.30d543c7.js.map": "/e-commecre-product/static/js/main.30d543c7.js.map",
     "938.22768fff.chunk.css.map": "/e-commecre-product/static/css/938.22768fff.chunk.css.map",
     "938.58d8b308.chunk.js.map": "/e-commecre-product/static/js/938.58d8b308.chunk.js.map",
     "787.ad5f89c9.chunk.js.map": "/e-commecre-product/static/js/787.ad5f89c9.chunk.js.map",
@@ -26,6 +26,6 @@
   },
   "entrypoints": [
     "static/css/main.5fe3c32b.css",
-    "static/js/main.00d363ce.js"
+    "static/js/main.30d543c7.js"
   ]
 }

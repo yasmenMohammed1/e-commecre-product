@@ -14,7 +14,17 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Navbar cart={cart} />
+        <Navbar
+          removeFromCart={(item, index) => {
+            setCart((prev) =>
+              prev.filter(
+                (prevItem, prevIndex) =>
+                  prevIndex + prevItem.name != index + item.name
+              )
+            );
+          }}
+          cart={cart}
+        />
       </header>
       <div className="body-container">
         <Routes>

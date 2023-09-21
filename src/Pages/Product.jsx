@@ -23,6 +23,7 @@ export class Product extends Component {
       mainImage: mainImg,
       rotation: 0,
       size: siziesArr[0],
+
       color: colors[0],
       count: 1,
     };
@@ -99,7 +100,7 @@ export class Product extends Component {
           <div className="product-details">
             <div className="product-title">
               <div>
-                <p> Name of Product</p>
+                <p> </p>
                 <div>
                   {[1, 2, 3, 4, 5].map((num) => (
                     <AiTwotoneStar
@@ -160,7 +161,21 @@ export class Product extends Component {
                   -
                 </button>
               </div>
-              <button className="add-to-cart">buy now</button>
+              <button
+                onClick={() => {
+                  console.log(this.state.count);
+                  for (let index = 0; index < this.state.count; index++) {
+                    setCart({
+                      ...this.state,
+                      name: "f3553es",
+                      image: this.state.mainImage,
+                    });
+                  }
+                }}
+                className="add-to-cart"
+              >
+                buy now
+              </button>
             </div>
             <div className=" actions-btns multiple">
               <div className="action-section">

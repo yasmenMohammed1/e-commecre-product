@@ -3,10 +3,7 @@ import React, { Component } from "react";
 import ProductCard from "../utils/Componants/ProductCard";
 import { AiTwotoneStar } from "react-icons/ai";
 
-import frame1 from "../utils/Images/main-product-1.png";
-import frame2 from "../utils/Images/main-product-2.png";
-import frame3 from "../utils/Images/main-product-3.png";
-import frame4 from "../utils/Images/main-product-4.png";
+import { colors, siziesArr, srcArr } from "../utils/Constants/productContent";
 
 import mainImg from "../utils/Images/main-product-main.png";
 
@@ -16,19 +13,18 @@ import share from "../utils/Images/share-icon.png";
 
 import rotate from "../utils/Images/rotate.png";
 
-import "../utils/Style/product.css";
+import "../utils/Style/product.scss";
+import ProductsMayLikeYou from "../utils/Componants/ProductsMayLikeYou";
 export class Product extends Component {
-  srcArr = [frame1, frame2, frame3, frame4];
-  colors = ["white", "black", "#0052D3", "#FCBC04"];
-  siziesArr = ["2*3", "4*4", "3*3"];
   rate = 3;
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       mainImage: mainImg,
       rotation: 0,
-      size: this.siziesArr[0],
-      color: this.colors[0],
+      size: siziesArr[0],
+
+      color: colors[0],
       count: 1,
     };
     this.rotate = this.rotate.bind(this);
@@ -74,6 +70,7 @@ export class Product extends Component {
     }));
   }
   render() {
+    const { setCart } = this.props;
     return (
       <div>
         <div className="header-title">
@@ -82,7 +79,7 @@ export class Product extends Component {
 
         <div className="product-card">
           <div className="product-image-slider">
-            {this.srcArr.map((img) => (
+            {srcArr.map((img) => (
               <ProductCard
                 imageSrc={img}
                 imageAlt={"alt"}
@@ -103,7 +100,7 @@ export class Product extends Component {
           <div className="product-details">
             <div className="product-title">
               <div>
-                <p> Name of Product</p>
+                <p> </p>
                 <div>
                   {[1, 2, 3, 4, 5].map((num) => (
                     <AiTwotoneStar
@@ -129,7 +126,7 @@ export class Product extends Component {
             <div className="choices-section">
               <p>Size</p>
 
-              {this.siziesArr.map((element) => (
+              {siziesArr.map((element) => (
                 <button
                   onClick={() => this.changeSize(element)}
                   className={`size-btn ${
@@ -143,7 +140,7 @@ export class Product extends Component {
             <div className="choices-section">
               <p>Color</p>
 
-              {this.colors.map((color) => (
+              {colors.map((color) => (
                 <button
                   style={{ backgroundColor: color }}
                   onClick={() => this.changeColor(color)}
@@ -164,7 +161,21 @@ export class Product extends Component {
                   -
                 </button>
               </div>
-              <button className="add-to-cart">buy now</button>
+              <button
+                onClick={() => {
+                  console.log(this.state.count);
+                  for (let index = 0; index < this.state.count; index++) {
+                    setCart({
+                      ...this.state,
+                      name: "f3553es",
+                      image: this.state.mainImage,
+                    });
+                  }
+                }}
+                className="add-to-cart"
+              >
+                buy now
+              </button>
             </div>
             <div className=" actions-btns multiple">
               <div className="action-section">
@@ -182,6 +193,8 @@ export class Product extends Component {
             </div>
           </div>
         </div>
+
+        <ProductsMayLikeYou setCart={setCart} />
       </div>
     );
   }

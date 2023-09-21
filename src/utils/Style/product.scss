@@ -1,0 +1,128 @@
+.product-card {
+  grid-template-columns: repeat(6, 1fr);
+  display: grid;
+  gap: 3rem;
+  padding-left: 10.01rem;
+  padding-right: 10.01rem;
+  .product-image {
+    padding: 8%;
+
+    border: 1px solid #d9d9d9;
+    border-radius: 8%;
+  }
+
+  .row {
+    gap: 1rem;
+    p {
+      color: #b93c3c;
+      font-weight: 500;
+    }
+    .text-underlined {
+      font-weight: 400;
+      color: #818181;
+      text-decoration: line-through;
+    }
+  }
+  .product-image-slider {
+    grid-column-start: 1;
+    grid-column-end: 1;
+  }
+  .product-main-image {
+    grid-column-start: 2;
+    grid-column-end: 5;
+  }
+  .product-details {
+    grid-column-start: 5;
+    grid-column-end: 12;
+  }
+  .product-description {
+    color: rgba(7, 7, 7, 0.6);
+    font-weight: 100;
+  }
+
+  .choices-section {
+    margin-top: 1rem;
+    color: #b93c3c;
+  }
+
+  .size-btn {
+    margin-top: 0.3rem;
+    margin-right: 1rem;
+    background-color: transparent;
+    border-radius: 0.5rem;
+    border: 1px solid #c7c7c5;
+    padding: 0.5rem 1.3rem 0.5rem 1.3rem;
+  }
+  .color-btn {
+    margin-right: 0.5rem;
+    border-radius: 50%;
+    padding: 0.8rem;
+  }
+  .selected {
+    border: #b93c3c solid 1px;
+  }
+  .main-image-container {
+    height: 100%;
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .actions-btns {
+    display: flex;
+    gap: 12px;
+    margin-top: 3rem;
+  }
+  .multiple {
+    gap: 2rem;
+  }
+  .action-section {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    color: #707070;
+    font-size: small;
+    gap: 0.2rem;
+    img {
+      padding: 0.8rem;
+      border-radius: 50%;
+    }
+    .share-icon {
+      padding: 0rem;
+    }
+  }
+  .add-to-cart {
+    width: 60%;
+    background-color: black;
+    color: white;
+    border-radius: 0.5rem;
+    border: 1px solid #c7c7c5;
+    padding: 0.5rem 1.3rem 0.5rem 1.3rem;
+  }
+  .product-count {
+    border-radius: 0.5rem;
+    border: 1px solid #c7c7c5;
+    padding: 0.5rem 1.3rem 0.5rem 1.3rem;
+    width: 30%;
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+    button {
+      border: none;
+      cursor: pointer;
+      background-color: transparent;
+    }
+  }
+  .product-title {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 100;
+    font-size: larger;
+    align-items: center;
+  }
+}

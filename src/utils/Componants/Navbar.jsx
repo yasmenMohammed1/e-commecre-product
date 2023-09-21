@@ -21,8 +21,8 @@ export class Navbar extends Component {
           ))}
         </div>
         <div className="col-md-3 icons-bar">
-          <img src="/images/search.png" alt="search icon" />{" "}
-          <img src="/images/cart.png" alt="cart icon" />{" "}
+          <img src="/images/search.png" alt="search icon" />
+          <img src="/images/cart.png" alt="cart icon" />
           <img src="/images/profile.png" alt="profile avatar" />
         </div>
       </div>

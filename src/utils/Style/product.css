@@ -1,0 +1,124 @@
+.product-card {
+  grid-template-columns: repeat(6, 1fr);
+  display: grid;
+  gap: 3rem;
+  padding-left: 10.01rem;
+  padding-right: 10.01rem;
+}
+.product-card .product-image {
+  padding: 8%;
+  border: 1px solid #d9d9d9;
+  border-radius: 8%;
+}
+.product-card .row {
+  gap: 1rem;
+}
+.product-card .row p {
+  color: #b93c3c;
+  font-weight: 500;
+}
+.product-card .row .text-underlined {
+  font-weight: 400;
+  color: #818181;
+  text-decoration: line-through;
+}
+.product-card .product-image-slider {
+  grid-column-start: 1;
+  grid-column-end: 1;
+}
+.product-card .product-main-image {
+  grid-column-start: 2;
+  grid-column-end: 5;
+}
+.product-card .product-details {
+  grid-column-start: 5;
+  grid-column-end: 12;
+}
+.product-card .product-description {
+  color: rgba(7, 7, 7, 0.6);
+  font-weight: 100;
+}
+.product-card .choices-section {
+  margin-top: 1rem;
+  color: #b93c3c;
+}
+.product-card .size-btn {
+  margin-top: 0.3rem;
+  margin-right: 1rem;
+  background-color: transparent;
+  border-radius: 0.5rem;
+  border: 1px solid #c7c7c5;
+  padding: 0.5rem 1.3rem 0.5rem 1.3rem;
+}
+.product-card .color-btn {
+  margin-right: 0.5rem;
+  border-radius: 50%;
+  padding: 0.8rem;
+}
+.product-card .selected {
+  border: #b93c3c solid 1px;
+}
+.product-card .main-image-container {
+  height: 100%;
+}
+.product-card .main-image-container img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.product-card .actions-btns {
+  display: flex;
+  gap: 12px;
+  margin-top: 3rem;
+}
+.product-card .multiple {
+  gap: 2rem;
+}
+.product-card .action-section {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  color: #707070;
+  font-size: small;
+  gap: 0.2rem;
+}
+.product-card .action-section img {
+  padding: 0.8rem;
+  border-radius: 50%;
+}
+.product-card .action-section .share-icon {
+  padding: 0rem;
+}
+.product-card .add-to-cart {
+  width: 60%;
+  background-color: black;
+  color: white;
+  border-radius: 0.5rem;
+  border: 1px solid #c7c7c5;
+  padding: 0.5rem 1.3rem 0.5rem 1.3rem;
+}
+.product-card .product-count {
+  border-radius: 0.5rem;
+  border: 1px solid #c7c7c5;
+  padding: 0.5rem 1.3rem 0.5rem 1.3rem;
+  width: 30%;
+  background-color: white;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+}
+.product-card .product-count button {
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+.product-card .product-title {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 100;
+  font-size: larger;
+  align-items: center;
+}/*# sourceMappingURL=product.css.map */

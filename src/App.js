@@ -7,7 +7,7 @@ import Home from "./Pages/Home";
 
 const Product = lazy(() => {
   return new Promise((resolve) => {
-    setTimeout(() => resolve(import("./Pages/Product")), 30000);
+    setTimeout(() => resolve(import("./Pages/Product")), 30);
   });
 });
 function App() {

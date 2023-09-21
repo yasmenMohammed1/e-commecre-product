@@ -1,16 +1,26 @@
-import React, { lazy, useState } from "react";
+import React, { lazy, useCallback, useEffect, useState } from "react";
 import Navbar from "./utils/Componants/Navbar";
 import "./utils/Style/main.scss";
 import { Route, Routes } from "react-router-dom";
 import Home from "./Pages/Home";
+import FallBack from "./Pages/FallBack";
 
-const Product = lazy(() => {
-  return new Promise((resolve) => {
-    setTimeout(() => resolve(import("./Pages/Product")), 30);
-  });
-});
 function App() {
+  const Product = lazy(() => {
+    return new Promise((resolve) => {
+      setTimeout(() => {
+        resolve(import("./Pages/Product"));
+      }, 300);
+    });
+  });
+
   const [cart, setCart] = useState([]);
+  const [percent, setPercent] = useState(0);
+  useEffect(() => {
+    setTimeout(() => {
+      setPercent((percent) => (percent < 100 ? percent + 10 : 100));
+    }, 300);
+  });
   return (
     <div className="App">
       <header className="App-header">
@@ -32,7 +42,13 @@ function App() {
           <Route
             path="product"
             element={
-              <React.Suspense fallback={<>...</>}>
+              <React.Suspense
+                fallback={
+                  <>
+                    <FallBack percent={percent} />
+                  </>
+                }
+              >
                 <Product
                   setCart={(item) => {
                     setCart((prev) => [...prev, item]);

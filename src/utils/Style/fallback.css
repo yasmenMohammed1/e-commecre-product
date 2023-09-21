@@ -1,0 +1,26 @@
+.fallback-container {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.progress {
+  margin: 50px auto;
+  padding: 2px;
+  width: 100%;
+  max-width: 500px;
+  background-color: #d9d9d9;
+  border: 3px solid rgba(217, 217, 217, 0.7882352941);
+  height: 30px;
+  border-radius: 3rem;
+}
+
+.progress .progress__bar {
+  height: 100%;
+  width: 0%;
+  border-radius: 3rem;
+  background-image: linear-gradient(180deg, #874a4a 10.42%, #a33333 66.15%, #f33737 100%);
+  animation: fill-bar 3s infinite;
+}/*# sourceMappingURL=fallback.css.map */

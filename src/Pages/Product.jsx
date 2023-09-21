@@ -163,7 +163,6 @@ export class Product extends Component {
               </div>
               <button
                 onClick={() => {
-                  console.log(this.state.count);
                   for (let index = 0; index < this.state.count; index++) {
                     setCart({
                       ...this.state,

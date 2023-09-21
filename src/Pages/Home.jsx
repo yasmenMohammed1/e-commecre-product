@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 class Home extends Component {
   render() {
-    return <div color="green">home </div>;
+    return <div>home </div>;
   }
 }
 

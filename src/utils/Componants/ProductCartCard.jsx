@@ -8,6 +8,7 @@ export class ProductCartCard extends Component {
       <div className="product-cart-card">
         <div>
           <img
+            className="product-image"
             width={" 85px"}
             height={"98px"}
             src={item.image}

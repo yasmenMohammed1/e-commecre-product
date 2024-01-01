@@ -41,7 +41,9 @@ export class MiniProductCard extends Component {
 
         <div className="item-description">
           <p className="item-name">{item.name}</p>
-          <p>{item.description}</p>
+          <div>
+            <p>{item.description}</p>
+          </div>
           <div>
             {[1, 2, 3, 4, 5].map((num) => (
               <AiTwotoneStar

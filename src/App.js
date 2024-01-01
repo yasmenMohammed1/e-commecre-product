@@ -2,7 +2,6 @@ import React, { lazy, useCallback, useEffect, useState } from "react";
 import Navbar from "./utils/Componants/Navbar";
 import "./utils/Style/main.scss";
 import { Route, Routes } from "react-router-dom";
-import Home from "./Pages/Home";
 import FallBack from "./Pages/FallBack";
 
 function App() {
@@ -38,8 +37,8 @@ function App() {
       </header>
       <div className="body-container">
         <Routes>
-          <Route index element={<Home />} />
           <Route
+            index
             path="product"
             element={
               <React.Suspense

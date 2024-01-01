@@ -43,7 +43,9 @@
 .item-description {
   padding-top: 1rem;
   text-wrap: wrap;
-  font-size: small;
+  font-size: xx-small;
+  word-break: break-all;
+  white-space: normal;
   font-weight: lighter;
   color: #787878;
 }

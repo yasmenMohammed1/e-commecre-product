@@ -13,9 +13,10 @@
   img {
     margin: 0.75rem;
   }
+
   a {
     text-decoration: none;
-    color: rgb(2, 2, 2);
+    color: rgb(137, 119, 5);
     margin-right: 20px;
   }
   position: fixed;
@@ -63,4 +64,27 @@
 }
 .cart-icon {
   position: relative;
+}
+
+@media only screen and (max-width: 1024px) {
+  .navbar-items {
+    font-size: xx-small;
+  }
+  .cart-container {
+    margin-top: 8%;
+    width: 40%;
+    //font-size: x-small;
+    padding: 2%;
+    margin-right: 2%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .navbar-items {
+    display: none;
+  }
+  .cart-container {
+    margin-top: 1%;
+    width: 80%;
+    margin-right: 2%;
+  }
 }
